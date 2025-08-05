@@ -1,0 +1,3 @@
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\webeye.dir/objects.a
+C:\MinGW\bin\ar.exe qc CMakeFiles\webeye.dir/objects.a @CMakeFiles\webeye.dir\objects1.rsp
+C:\MinGW\bin\c++.exe  -Wall -Wextra -O3 -DNDEBUG -O3 -DNDEBUG -Wl,--whole-archive CMakeFiles\webeye.dir/objects.a -Wl,--no-whole-archive -o bin\webeye.exe -Wl,--out-implib,libwebeye.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\webeye.dir\linkLibs.rsp

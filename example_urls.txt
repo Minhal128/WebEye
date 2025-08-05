@@ -1,0 +1,15 @@
+# Example URLs for WebEye testing
+# Lines starting with # are comments and will be ignored
+
+# Test sites
+https://httpbin.org
+https://example.com
+https://httpstat.us/200
+
+# Security test sites (use responsibly)
+https://securityheaders.com
+https://observatory.mozilla.org
+
+# Educational sites
+https://owasp.org
+https://portswigger.net 
