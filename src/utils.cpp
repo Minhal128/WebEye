@@ -23,11 +23,28 @@ namespace Utils {
 
 void print_banner() {
     std::cout << "\n";
-    std::cout << Colors::CYAN << Colors::BOLD << "  WEB EYE" << Colors::RESET << Colors::GRAY << " - Security Scanner\n";
-    std::cout << Colors::GRAY << "  " << std::string(30, '-') << "\n";
-    std::cout << Colors::WHITE << "  Version: " << Colors::YELLOW << "1.0.0\n";
-    std::cout << Colors::WHITE << "  Purpose: " << Colors::GRAY << "Comprehensive Web Security Analysis\n";
-    std::cout << Colors::RESET << "\n";
+    
+    // Modern box-style banner using only ASCII characters
+    std::cout << Colors::CYAN << Colors::BOLD;
+    std::cout << "  +-----------------------------------------------------------+\n";
+    std::cout << "  |                                                           |\n";
+    std::cout << "  |    ##    ## ######### ########       ######### ##    ##  |\n";
+    std::cout << "  |    ##    ## ##        ##   ##        ##         ##  ##   |\n";
+    std::cout << "  |    ## ## ## #######   ########       #######     ####    |\n";
+    std::cout << "  |    ######## ##        ##   ##        ##           ##     |\n";
+    std::cout << "  |     ### ##  ######### ########       #########    ##     |\n";
+    std::cout << "  |                                                           |\n";
+    std::cout << Colors::RESET;
+    
+    // Tool information with modern styling
+    std::cout << "  |           " << Colors::YELLOW << Colors::BOLD << "Web Security Scanner" << Colors::RESET;
+    std::cout << Colors::GRAY << " • " << Colors::CYAN << Colors::BOLD << "v1.0.0" << Colors::RESET << "           |\n";
+    std::cout << "  |        " << Colors::GRAY << "Professional Cybersecurity Assessment Tool" << Colors::RESET << "      |\n";
+    std::cout << "  |                                                           |\n";
+    
+    std::cout << Colors::CYAN << Colors::BOLD;
+    std::cout << "  +-----------------------------------------------------------+" << Colors::RESET << "\n";
+    std::cout << "\n";
 }
 
 void print_banner_alt() {
