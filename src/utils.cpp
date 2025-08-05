@@ -24,26 +24,25 @@ namespace Utils {
 void print_banner() {
     std::cout << "\n";
     
-    // Modern box-style banner using only ASCII characters
+    // Kali Linux style banner with clear WEB EYE text
+    std::cout << Colors::RED << Colors::BOLD;
+    std::cout << "  ================================================================\n";
     std::cout << Colors::CYAN << Colors::BOLD;
-    std::cout << "  +-----------------------------------------------------------+\n";
-    std::cout << "  |                                                           |\n";
-    std::cout << "  |    ##    ## ######### ########       ######### ##    ##  |\n";
-    std::cout << "  |    ##    ## ##        ##   ##        ##         ##  ##   |\n";
-    std::cout << "  |    ## ## ## #######   ########       #######     ####    |\n";
-    std::cout << "  |    ######## ##        ##   ##        ##           ##     |\n";
-    std::cout << "  |     ### ##  ######### ########       #########    ##     |\n";
-    std::cout << "  |                                                           |\n";
-    std::cout << Colors::RESET;
+    std::cout << "\n";
+    std::cout << "   W   W  EEEEE  BBBB      EEEEE  Y   Y  EEEEE\n";
+    std::cout << "   W   W  E      B   B     E       Y Y   E    \n";
+    std::cout << "   W W W  EEEE   BBBB      EEEE     Y    EEEE \n";
+    std::cout << "   WW WW  E      B   B     E        Y    E    \n";
+    std::cout << "   W   W  EEEEE  BBBB      EEEEE    Y    EEEEE\n";
+    std::cout << "\n";
+    std::cout << Colors::RED << Colors::BOLD;
+    std::cout << "  ================================================================" << Colors::RESET << "\n";
     
-    // Tool information with modern styling
-    std::cout << "  |           " << Colors::YELLOW << Colors::BOLD << "Web Security Scanner" << Colors::RESET;
-    std::cout << Colors::GRAY << " • " << Colors::CYAN << Colors::BOLD << "v1.0.0" << Colors::RESET << "           |\n";
-    std::cout << "  |        " << Colors::GRAY << "Professional Cybersecurity Assessment Tool" << Colors::RESET << "      |\n";
-    std::cout << "  |                                                           |\n";
-    
-    std::cout << Colors::CYAN << Colors::BOLD;
-    std::cout << "  +-----------------------------------------------------------+" << Colors::RESET << "\n";
+    // Tool information with Kali styling
+    std::cout << "\n";
+    std::cout << Colors::GREEN << Colors::BOLD << "  [+] Web Security Scanner " << Colors::YELLOW << "v1.0.0" << Colors::RESET << "\n";
+    std::cout << Colors::WHITE << "  [+] Professional Cybersecurity Assessment Tool" << Colors::RESET << "\n";
+    std::cout << Colors::MAGENTA << "  [+] Developed for Penetration Testing" << Colors::RESET << "\n";
     std::cout << "\n";
 }
 
