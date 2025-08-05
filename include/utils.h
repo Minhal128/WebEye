@@ -54,6 +54,7 @@ namespace Utils {
         const std::string MAGENTA = "\033[35m";
         const std::string CYAN = "\033[36m";
         const std::string WHITE = "\033[37m";
+        const std::string GRAY = "\033[90m";
         const std::string BOLD = "\033[1m";
         const std::string UNDERLINE = "\033[4m";
     }

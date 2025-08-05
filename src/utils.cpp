@@ -22,22 +22,12 @@
 namespace Utils {
 
 void print_banner() {
-    std::cout << Colors::CYAN << Colors::BOLD;
     std::cout << "\n";
-    std::cout << "    +======================================================+\n";
-    std::cout << "    |                                                      |\n";
-    std::cout << "    |  \\   /\\  _____ ______       _____ \\   / _____     |\n";
-    std::cout << "    |   \\ /  \\ |     |  __  |     |      \\ /  |     |    |\n";
-    std::cout << "    |    \\/\\  |____| |____/      |____   \\/   |_____|    |\n";
-    std::cout << "    |     \\\\  |     |     \\     |        |    |         |\n";
-    std::cout << "    |      \\  |_____| _____/     |________|    |_____     |\n";
-    std::cout << "    |                                                      |\n";
-    std::cout << "    |          " << Colors::YELLOW << "Web Security Scanner v1.0.0" << Colors::CYAN << "           |\n";
-    std::cout << "    |        " << Colors::WHITE << "Comprehensive Cybersecurity CLI Tool" << Colors::CYAN << "      |\n";
-    std::cout << "    |                                                      |\n";
-    std::cout << "    +======================================================+\n";
-    std::cout << "\n";
-    std::cout << Colors::RESET;
+    std::cout << Colors::CYAN << Colors::BOLD << "  WEB EYE" << Colors::RESET << Colors::GRAY << " - Security Scanner\n";
+    std::cout << Colors::GRAY << "  " << std::string(30, '-') << "\n";
+    std::cout << Colors::WHITE << "  Version: " << Colors::YELLOW << "1.0.0\n";
+    std::cout << Colors::WHITE << "  Purpose: " << Colors::GRAY << "Comprehensive Web Security Analysis\n";
+    std::cout << Colors::RESET << "\n";
 }
 
 void print_banner_alt() {
