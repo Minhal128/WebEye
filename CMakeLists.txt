@@ -74,6 +74,19 @@ else()
     set(USE_SIMPLE_HTTP OFF)
 endif()
 
+# --- Static/Portable Build Settings ---
+# Force static runtime for MSVC
+if(MSVC)
+    set(CMAKE_MSVC_RUNTIME_LIBRARY "MultiThreaded$<$<CONFIG:Debug>:Debug>")
+    message(STATUS "MSVC static runtime enabled")
+endif()
+
+# Prefer static linking for CURL if available
+set(BUILD_SHARED_LIBS OFF)
+set(CURL_USE_STATIC_LIBS ON)
+
+# --- End Static/Portable Build Settings ---
+
 # Source files
 set(SOURCES
     src/main.cpp

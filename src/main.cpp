@@ -62,6 +62,16 @@ int main(int argc, char* argv[]) {
 
     try {
         Utils::print_banner();
+        const std::string notice = "Tool by : cybermon & Minhal Rizvi";
+        const int term_width = 80;
+        int pad = (term_width - static_cast<int>(notice.size())) / 2;
+        if (pad < 0) pad = 0;
+        const std::string border(term_width, '=');
+        std::cout << "\033[1;31m" << border << "\033[0m\n";
+        std::cout << "\033[1;31m"
+                  << std::string(pad, ' ') << notice << "\033[0m\n";
+        std::cout << "\033[1;31m" << border << "\033[0m\n";
+        // std::cout << "\033[1;31mthis tool is made by cybermon \u2764\033[0m\n";
 
         int timeout_ms = 10000;
         std::string user_agent = "WebEye/1.0";
