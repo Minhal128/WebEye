@@ -1,0 +1,33 @@
+{
+  "results": [
+    {
+      "content_type": " text/html",
+      "headers": [
+        "Content-Type: text/html"
+      ],
+      "recommendations": [
+        "Add Strict-Transport-Security header",
+        "Add X-Frame-Options header",
+        "Add X-Content-Type-Options: nosniff",
+        "Implement CSRF tokens for forms",
+        "Implement Content Security Policy header"
+      ],
+      "response_code": 200,
+      "response_time_ms": 1384,
+      "security_headers": {
+        "SSL": "Enabled"
+      },
+      "status": "OK\r",
+      "url": "https://app.thebcms.com/d/i/create",
+      "vulnerabilities": [
+        "Missing HSTS header",
+        "Missing X-Frame-Options header",
+        "Missing X-Content-Type-Options header",
+        "No CSRF protection detected",
+        "Missing Content Security Policy"
+      ]
+    }
+  ],
+  "scan_timestamp": "2025-08-07 15:28:54.205",
+  "total_urls": 1
+}
