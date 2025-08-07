@@ -62,7 +62,7 @@ int main(int argc, char* argv[]) {
 
     try {
         Utils::print_banner();
-        const std::string notice = "Tool by : cybermon & Minhal Rizvi";
+        const std::string notice = "Tool by : cybermon & 3ntr0py";
         const int term_width = 80;
         int pad = (term_width - static_cast<int>(notice.size())) / 2;
         if (pad < 0) pad = 0;
